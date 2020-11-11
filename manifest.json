@@ -14,7 +14,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "http://investorday.demo.lan/pwa/",
+    "start_url": "https://culitskiy.github.io/pwa/",
     "display": "standalone",
     "orientation": "portrait",
     "lang": "Russian"
