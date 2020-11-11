@@ -1,0 +1,21 @@
+{
+    "name": "Hookah Timer",
+    "short_name": "Timer",
+    "description": "timer for hookah smoking",
+    "icons": [
+        {
+            "src": "assets/images/hookah.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/images/hookah.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "http://investorday.demo.lan/pwa/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "lang": "Russian"
+}

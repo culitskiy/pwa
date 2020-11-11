@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel='manifest' href='manifest.json'>
+    <title>Hookah Timer</title>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+    <div class="container">
+        <div class="timer">0</div>
+        <div class="timer timer__activeUser">0</div>
+        <input class="name__input" placeholder="Введите имя" />
+        <button class="name__button">Добавить  чувака</button>
+        <div class="users__list"></div>
+        <input class="time__input" type="text" placeholder="время в секундах">
+        <button class="time__button">Установить</button>
+        <button class="timer__start">Погнали</button>
+    </div>
+    <template id="user__itemTemp">
+        <div class="user__item">
+            <div class="user__name"></div>
+            <div class="user__delete"></div>
+        </div>
+    </template>
+    <script type="text/javascript" src="assets/scripts/main.js"></script>
+</body>
+
+</html>
