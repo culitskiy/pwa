@@ -17,5 +17,7 @@
     "start_url": "https://culitskiy.github.io/pwa/",
     "display": "standalone",
     "orientation": "portrait",
-    "lang": "Russian"
+    "lang": "Russian",
+    "background_color": "#fafafa",
+    "theme_color": "#fafafa"
 }
