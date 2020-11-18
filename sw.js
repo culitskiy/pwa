@@ -1,4 +1,7 @@
 self.addEventListener('install', function(event) {
+  Notification.requestPermission().then(function(result) {
+    console.log(result);
+  });
     var indexPage = new Request('index.html');
     event.waitUntil(
       fetch(indexPage).then(function(response) {
@@ -19,7 +22,7 @@ self.addEventListener('install', function(event) {
       })
     );
   });
-  
+
   self.addEventListener('pushsubscriptionchange', function(event) {
     console.log('Spell expired');
     event.waitUntil(
