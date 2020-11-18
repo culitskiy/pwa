@@ -19,6 +19,25 @@ self.addEventListener('install', function(event) {
       })
     );
   });
+  
+  self.addEventListener('pushsubscriptionchange', function(event) {
+    console.log('Spell expired');
+    event.waitUntil(
+      self.registration.pushManager.subscribe({ userVisibleOnly: true })
+      .then(function(subscription) {
+        console.log('Another invade! Legilimens!', subscription.endpoint);
+        return fetch('register', {
+          method: 'post',
+          headers: {
+            'Content-type': 'application/json'
+          },
+          body: JSON.stringify({
+            endpoint: subscription.endpoint
+          })
+        });
+      })
+    );
+  });
 
   self.addEventListener('fetch', function(event) {
     var updateCache = function(request){
